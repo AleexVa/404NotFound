@@ -1,0 +1,114 @@
+/*FORMATO GENERAL DE LA PÁGINA*/
+body, html{
+	background-image: url("../img/1.png");
+	height: 100%;
+
+}
+/* FORMATO DEL TEXTO OOPS*/
+#textOops{
+	color: white;
+	font-family: 'Gemunu Libre', arial, monaco;
+	font-weight: bolder;
+	font-size:55px;
+	text-align: center;
+	margin:0;
+}
+
+/* FORMATO DEL TEXTO 'PAGE NOT FOUND'*/
+#textPage{
+	color: white;
+	font-family: 'Gemunu Libre', arial, monaco;
+	font-size: 30px;
+	text-align: center;
+}
+ /*  FORMATO DE LOS BOTONES*/
+#contButton{
+	text-align: center;
+}
+
+ /* FORMATO DEL BOTÓN IZQUIERDO*/
+#button1{
+	margin-right: 25px;
+}
+
+ /* FORMATO DE LAS IMÁGENES*/
+#images{
+	height: auto; 
+	width: auto; 
+	max-width:700px; 
+	max-height: 700px;
+	align-items: center;
+}
+
+ /* FORMATO DEL DIV WRAPPER*/
+.wrapper {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+ /* FORMATO DEL DIV MAIN*/
+.main {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+ /* FORMATO DE LA IMAGEN DEL ASTRONAUTA*/
+.img1{
+	position: relative;
+	animation: float 3s ease-in-out infinite;
+
+}
+
+ /* FORMATO DEL METEORITO 1*/
+.img-1{
+	position: absolute;
+	animation: float 2s ease-in-out infinite;
+
+}
+
+ /* FORMATO DEL METEORITO 2*/
+.img-2{
+	position: absolute;
+	animation: float 4s ease-in-out infinite;
+	margin-left: 60%;
+}
+
+ /* FORMATO DEL METEORITO 3*/
+.img-3{
+	position: absolute;
+	animation: float 6s ease-in-out infinite;
+	margin-left: 30%;
+}
+
+ /* FORMATO DE LA IMAGEN DEL SATÉLITE*/
+.img-sat{
+	display:inline-block;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: 10s rotate linear infinite;
+    animation: 10s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    margin-left: 25%;
+
+}
+
+ /* INICIALIZADORES DE ACCIONES */
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {	
+		transform: translatey(0px);
+	}
+}
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
